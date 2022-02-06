@@ -2,7 +2,7 @@ Please see https://unofficialaciguide.com
 
 Used for POC:  Cisco Cloud ACI Generic External Connectivity.  https://unofficialaciguide.com/2022/01/20/cisco-cloud-aci-generic-external-connectivity/
 
-This spins up a VPC, IGW & EC2.  ssh keys are imported from local machine you are using
+This spins up a VPC, IGW & EC2.  It also installs httpd with a index.html file. ssh keys are imported from local machine you are using.   Security Groups are fully open,  please modify in main.tf as needed.
 
 # Usage:
 ```
