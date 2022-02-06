@@ -19,4 +19,6 @@ as an example,  to change VPC names and everything associated with name from aws
 ```
 sed -i 's/phy-dummy/brownfield/g' main.tf
 ```
+* 📗 Note:
 Public IP will spit out on screen after terraform apply.  You could also do terraform refresh followed by terraform output to view it later.
+If you needed more than 1 instance, please change the value of num_inst in file terraform.tfvars.  Or comment that out and it will ask you how many instances you want when you do terraform apply
