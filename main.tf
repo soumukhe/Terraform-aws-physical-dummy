@@ -60,7 +60,7 @@ resource "aws_route" "default_to_igw" {
   gateway_id             = aws_internet_gateway.igw-phy-dummy.id
 
 }
-##  Notice that this will upload my public key to AWS and use it for the EC2s.  This way, I an login with my private keys.
+##  Notice that this will upload my public key to AWS and use it for the EC2s.  This way, I can ssh in to EC2 with my private keys.
 ##  so, first do:   cp ~/.ssh/id_rsa.pub   ./.certs
 
 resource "aws_key_pair" "loginkey1" {
