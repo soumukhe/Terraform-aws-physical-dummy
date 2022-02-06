@@ -14,3 +14,9 @@ terraform init
 terraform validate
 terraform apply
 ```
+If you needed to change names,IPs hardcoded in main.tf, please vi and change appropriately.
+as an example,  to change VPC names and everything associated with name from aws-phy-dummy to aws-brfiwnfield you can simply use:
+```
+sed -i 's/phy-dummy/brownfield/g' main.tf
+```
+Public IP will spit out on screen after terraform apply.  You could also do terraform refresh followed by terraform output to view it later.
